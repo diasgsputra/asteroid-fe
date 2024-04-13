@@ -34,7 +34,7 @@ function App() {
   const fetchAsteroidsOneYear = useCallback(async () => {
     try {
       setIsLoading(true);
-      const response = await fetch(`https://asteroid-lq4t.onrender.com/api/one-year-asteroids?year=${year}`);
+      const response = await fetch(`https://asteroid-lq4t.onrender.com/api/mapping-one-year-asteroids?year=${year}`);
       const result = await response.json();
       setIsLoading(false);
       setResult(result.data);
